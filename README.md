@@ -1,0 +1,3 @@
+# CIVL 5220 Project: Let there be WiFi! Digital twins for room planning
+
+Browsing on a building model may not replace the intuitiveness of in-situexperience, especially in indoor planning. For instance, to reserve a lab seatwith the best ventilation status, the easiest way is to try available ones andfeel. Or one has to analyze the complex 3D simulation result. However, on-siteexperience is not always possible. As an innovative idea, our project aims tosimulate indoor factors based on Building Intelligence Model (BIM), and offerpersonal experience leveraging Virtual Reality (VR) techniques. These factorsinclude lightness, noise, WiFi, and air conditioner.
