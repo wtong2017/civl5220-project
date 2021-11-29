@@ -15,7 +15,7 @@ namespace RvtFader
           string fileName = _default_filename)
         {
             File.WriteAllText(
-              Path.Combine(App.Path, fileName),
+              Path.Combine(Application.dataPath, fileName),
               JsonUtility.ToJson(this));
               /*(new JavaScriptSerializer()).Serialize(
                 this));*/
@@ -25,7 +25,7 @@ namespace RvtFader
           T pSettings,
           string fileName = _default_filename)
         {
-            string path = Path.Combine(App.Path, fileName);
+            string path = Path.Combine(Application.dataPath, fileName);
             File.WriteAllText(path,
                 JsonUtility.ToJson(pSettings));
               /*(new JavaScriptSerializer()).Serialize(
@@ -35,7 +35,7 @@ namespace RvtFader
         public static T Load(
           string fileName = _default_filename)
         {
-            string path = Path.Combine(App.Path, fileName);
+            string path = Path.Combine(Application.dataPath, fileName);
             T t = new T();
             if (File.Exists(path))
             {
