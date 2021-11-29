@@ -18,8 +18,6 @@ namespace RvtFader
     {
         Document _doc;
         Settings _settings;
-        View3D _view3d;
-        ElementFilter _wallFilter;
 
 #if DEBUG_GRAPHICAL
     /// <summary>
@@ -33,18 +31,6 @@ namespace RvtFader
           Settings settings) {
             _doc = doc;
             _settings = settings;
-
-            // Find a 3D view to use for the 
-            // ReferenceIntersector constructor.
-
-            //_view3d
-            //  = new FilteredElementCollector(doc)
-            //    .OfClass(typeof(View3D))
-            //    .Cast<View3D>()
-            //    .First<View3D>(v => !v.IsTemplate);
-
-            //_wallFilter = new ElementClassFilter(
-            //  typeof(Wall));
         }
 
         /// <summary>
@@ -54,33 +40,9 @@ namespace RvtFader
         int GetWallCount(Vector3 psource, Vector3 ptarget) {
             float d = Vector3.Distance(ptarget, psource);
 
-            //ReferenceIntersector intersector
-            //  = new ReferenceIntersector(_wallFilter,
-            //    FindReferenceTarget.Face, _view3d);
-
-            //intersector.FindReferencesInRevitLinks = true;
-
-            //IList<ReferenceWithContext> referencesWithContext
-            //  = intersector.Find(psource, ptarget - psource);
-
             // cast a ray
             RaycastHit[] hits;
             hits = Physics.RaycastAll(psource, (ptarget-psource).normalized, d);
-
-            //for (int i = 0; i < hits.Length; i++) {
-            //    RaycastHit hit = hits[i];
-            //    Renderer rend = hit.transform.GetComponent<Renderer>();
-
-            //    if (rend) {
-            //        // Change the material of all hit colliders
-            //        // to use a transparent shader.
-            //        rend.material.shader = Shader.Find("Transparent/Diffuse");
-            //        Color tempColor = rend.material.color;
-            //        tempColor.a = 0.3F;
-            //        rend.material.color = tempColor;
-            //    }
-            //}
-
             List<GameObject> wallIds = new List<GameObject>();
 
             foreach (RaycastHit hit in
