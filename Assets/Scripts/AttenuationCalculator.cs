@@ -54,11 +54,12 @@ namespace RvtFader
                     }
                 }
             }
-            Debug.Log(
-              string.Format("{0} -> {1}: {2} walls",
-                Util.PointString(psource),
-                Util.PointString(ptarget),
-                wallIds.Count));
+            //Debug.Log(
+            //  string.Format("{0} -> {1}: {2} walls",
+            //    Util.PointString(psource),
+            //    Util.PointString(ptarget),
+            //    wallIds.Count));
+            Debug.DrawLine(psource, ptarget, Color.green);
 
             return wallIds.Count;
         }
@@ -88,14 +89,13 @@ namespace RvtFader
       _sketch.Document.Create.NewModelCurve( line, _sketch );
 #endif // DEBUG_GRAPHICAL
 
-            double d = Vector3.Distance(ptarget, psource);
+            float d = Vector3.Distance(ptarget, psource);
 
-            double a = Util.FootToMetre(d)
-              * _settings.AttenuationAirPerMetreInDb;
+            float a = 20 + 10 * Mathf.Log(d, 10) * (float)_settings.AttenuationAirPerMetreInDb;
 
             int wallCount = GetWallCount(psource, ptarget);
 
-            a += wallCount * _settings.AttenuationWallInDb;
+            a += wallCount * (float)_settings.AttenuationWallInDb;
 
             return a;
         }

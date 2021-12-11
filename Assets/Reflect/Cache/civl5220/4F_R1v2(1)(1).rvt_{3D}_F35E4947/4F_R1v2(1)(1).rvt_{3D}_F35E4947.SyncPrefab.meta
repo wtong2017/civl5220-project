@@ -1,0 +1,83 @@
+fileFormatVersion: 2
+guid: de0e40b1b8018da41bc3abfcae1546bc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f488ea0f1e5ec1f45a401a0e4b986db1, type: 3}
+  materialRemaps:
+  - syncMaterialName: Finishes - Interior - Plasterboard_[423]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Default-Material
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Concrete - Cast In Situ_[523]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u767D\u8272\u74F7\u7816313_313-\u5916\u5899\u6750\u8D28_[843994]"
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Default Wall_[24]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Gypsum Wall Board_[595723]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Glass_[26]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Sash_[10988]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Insulation _ Thermal Barriers - Batt Insulation_[5...
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Glass, White, High Luminance_[1333991]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Steel, Paint Finish, Ivory, Glossy_[1333990]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Plastic - Formed Plastic_[543]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u73BB\u7483_[672738]_unsupported"
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: NBS_Concept_[1292652]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Birch_[1306128]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Metal - Paint Linen_[1313806]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Plastic Laminate - White Oak_[1313803]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Plastic Laminate - Beige - Light - Smooth_[1313802...
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Default_[23]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Finishes - Interior - Ceiling Tile 600 x 1200_[724...
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u84DD\u7A97\u6846_[976752]"
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Default Floor_[758]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Steel, Chrome Plated_[1303561]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Textile - Slate Blue_[1311391]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 128-128-128_[500780_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 38-76-38_[595061_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 0-255-255_[107811_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 192-192-192_[500547_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 255-0-0_[94964_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 255-255-0_[107614_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 255-255-255_[94963_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Render Material 0-255-0_[107823_ds]_unsupported
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: Concrete Masonry Units_[595724]
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u94C1\u7EA2_[987222]"
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u94A2\u67F11_[983007]"
+    remappedMaterial: {instanceID: 0}
+  - syncMaterialName: "\u9ED1\u7AD6\u6883_[770136]"
+    remappedMaterial: {instanceID: 0}

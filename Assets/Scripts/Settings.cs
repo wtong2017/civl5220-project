@@ -49,7 +49,7 @@ namespace RvtFader
 
     public class Settings : AppSettings<Settings>
     {
-        public double AttenuationWallInDb = 3;
-        public double AttenuationAirPerMetreInDb = 0.8;
+        public double AttenuationWallInDb = 4.8;
+        public double AttenuationAirPerMetreInDb = 3;
     }
 }
