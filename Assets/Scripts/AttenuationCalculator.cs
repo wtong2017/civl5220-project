@@ -9,6 +9,7 @@ using System;
 //using System.Diagnostics;
 //using Autodesk.Revit.DB;
 using System.Linq;
+using UnityEngine.Reflect;
 #endregion
 
 
@@ -47,10 +48,20 @@ namespace RvtFader
 
             foreach (RaycastHit hit in
               hits) {
-                string _name = hit.collider.gameObject.name;
-                if (_name.Contains("Wall") || _name.Contains("Floor")) {
-                    if (!wallIds.Contains(hit.collider.gameObject)) {
-                        wallIds.Add(hit.collider.gameObject);
+                //string _name = hit.collider.gameObject.name;
+                //if (_name.Contains("Wall") || _name.Contains("Floor")) {
+                //    if (!wallIds.Contains(hit.collider.gameObject)) {
+                //        wallIds.Add(hit.collider.gameObject);
+                //    }
+                //}
+                Metadata metadata;
+                hit.collider.gameObject.TryGetComponent<Metadata>(out metadata);
+                if (metadata) {
+                    if (metadata.GetParameter("Category") == "Walls" || metadata.GetParameter("Category") == "Floors") {
+                        Debug.DrawLine(psource, ptarget, Color.green);
+                        if (!wallIds.Contains(hit.collider.gameObject)) {
+                            wallIds.Add(hit.collider.gameObject);
+                        }
                     }
                 }
             }
@@ -59,7 +70,7 @@ namespace RvtFader
             //    Util.PointString(psource),
             //    Util.PointString(ptarget),
             //    wallIds.Count));
-            Debug.DrawLine(psource, ptarget, Color.green);
+            //Debug.DrawLine(psource, ptarget, Color.green);
 
             return wallIds.Count;
         }
